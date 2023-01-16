@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+	<!-- Launch Turtlesim Simulation -->
+	<node pkg="turtlesim" name="turtlesim" type="turtlesim_node" />
+	<!-- Custom nodes -->
+	<node pkg="turtlesim_circular_motion" name="pub_to_turtlesim" type="pub_to_turtlesim" />
+	<node pkg="turtlesim_circular_motion" name="pub_custom_msg" type="pub_custom_msg" output="screen" />
+</launch>
